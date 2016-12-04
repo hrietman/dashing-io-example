@@ -1,0 +1,5 @@
+FROM 		hrietman/dashing:latest
+
+RUN cd /usr/src/dashboard && bundle install && bundle
+
+CMD cd /usr/src/dashboard && dashing start
